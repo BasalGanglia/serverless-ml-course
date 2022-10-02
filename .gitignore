@@ -5,9 +5,12 @@ __pycache__/
 
 *.nbconvert.ipynb
 *~
-*.png
-.hw_api_key
 
+*.png
+assets/
+.hw_api_key
+*.json
+*.pkl
 # C extensions
 *.so
 
