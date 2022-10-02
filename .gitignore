@@ -6,7 +6,9 @@ __pycache__/
 *~
 
 .hw_api_key
-
+*.png
+*.pkl
+*.json
 # C extensions
 *.so
 
