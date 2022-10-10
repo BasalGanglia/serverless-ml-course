@@ -1,3 +1,4 @@
+from tkinter import W
 from sml import synthetic_data
 from unittest import TestCase
 import pytest
@@ -12,4 +13,31 @@ def test_generate_atm_withdrawal(credit_card_number: str, cash_amounts: list, le
                                  delta: int, radius: float, country_code, excp):
     with excp:
         synthetic_data.generate_atm_withdrawal(credit_card_number, cash_amounts, length, delta, radius, country_code)
-        
+
+def test_generate_list_credit_card_numbers():
+    credit_card = synthetic_data.generate_list_credit_card_numbers()
+    assert(type(credit_card[0]['cc_num']) == str)
+import numpy
+@pytest.mark.parametrize(
+    "cc_num, provider, expires, age",
+    [("4720347042991709", "visa", "07/27", 95 ),
+    ("4720347042991709", "visa", "07/27", 95),
+    ("4720347042991709", "visa", "07/27", 95),
+    pytest.param("4720347042991709", "visa", "07/27", 195, marks=pytest.mark.xfail(strict=True))
+    ]
+)
+def test_generate(cc_num: str, provider: str, expires: str, age: int):
+    cards = synthetic_data.create_credit_cards_as_df([{'cc_num': cc_num, 'provider' : provider, 'expires': expires, 'age': age}])
+    # print(f'what is this {card}')
+    card = cards.iloc[0]
+    assert (type(card['cc_num']) == numpy.int64)
+    assert (type(card['provider']) == str)
+    assert (type(card['expires']) == str)
+    assert (type(card['age']) == numpy.int64)
+    assert ((card['age'] > 0) and (card['age'] < 120))
+    
+# == True 
+# if type(credit_cards[0]['provider'] == str):
+#     print('jee2')
+# if type(credit_cards[0]['age']) == int:
+#     print('duh')
