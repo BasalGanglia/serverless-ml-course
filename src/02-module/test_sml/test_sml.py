@@ -28,16 +28,10 @@ import numpy
 )
 def test_generate(cc_num: str, provider: str, expires: str, age: int):
     cards = synthetic_data.create_credit_cards_as_df([{'cc_num': cc_num, 'provider' : provider, 'expires': expires, 'age': age}])
-    # print(f'what is this {card}')
     card = cards.iloc[0]
     assert (type(card['cc_num']) == numpy.int64)
     assert (type(card['provider']) == str)
     assert (type(card['expires']) == str)
     assert (type(card['age']) == numpy.int64)
     assert ((card['age'] > 0) and (card['age'] < 120))
-    
-# == True 
-# if type(credit_cards[0]['provider'] == str):
-#     print('jee2')
-# if type(credit_cards[0]['age']) == int:
-#     print('duh')
+ 
