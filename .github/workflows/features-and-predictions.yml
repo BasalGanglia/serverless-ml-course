@@ -1,9 +1,10 @@
 name: iris-feature-and-prediction-pipelines
 
-on:
-  workflow_dispatch:
-  schedule:
-    - cron: '11 11 * * *'
+# I disable this as I don't really want this to run forever ...
+# on:
+#  workflow_dispatch:
+#  schedule:
+#    - cron: '11 11 * * *'
 
 jobs:
   test_schedule:
