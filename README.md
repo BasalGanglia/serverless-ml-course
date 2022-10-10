@@ -1,5 +1,5 @@
 ![readme header](/assets//images/card_horizontal.jpg)
-
+[![fraud-feature-pipelines](https://github.com/BasalGanglia/serverless-ml-course/actions/workflows/fraud-feature-pipelines.yml/badge.svg)](https://github.com/BasalGanglia/serverless-ml-course/actions/workflows/fraud-feature-pipelines.yml)
 
 <a href="https://join.slack.com/t/featurestoreorg/shared_invite/zt-ssh8dec1-IsvwLdTsRMssjT4~Ru2RKg" alt="slack"> <img src="https://img.shields.io/badge/Join Slack-blue.svg?logo=slack" /></a> 
 <a href="https://www.youtube.com/channel/UC-LrK8ei6w57RmKeswkU23Q" alt="youtube"> <img src="https://img.shields.io/badge/Youtube-red.svg?logo=Youtube" /></a>
