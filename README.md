@@ -15,6 +15,8 @@ You should not need to be an expert in Kubernetes or cloud computing to build an
 
 You do not need to install, upgrade, or operate any systems. You only need to be able to write Python programs that can be scheduled to run as pipelines. The features and models your pipelines produce are managed by a serverless feature store / model registry. We will also show you how to build a UI for your prediction service by writing Python and some HTML.
 
+Read <a href="https://www.serverless-ml.org/what-is-serverless-machine-learning">this article</a> for an overview on serverless machine learning.
+
 **Prerequisites:** Python - Pandas - Github 
 
 # **Modules**
@@ -38,7 +40,11 @@ You do not need to install, upgrade, or operate any systems. You only need to be
     - Full lecture: [Video](https://youtu.be/BD1UOJs1Bvo) | [Slides](https://drive.google.com/file/d/1XhfnH7DzwDqQKS6WxDVqWFFas0fi_jnJ/view?usp=sharing)
 
     - [Lab](https://youtu.be/QfzrKgLqEXc) | [Slides](https://drive.google.com/file/d/1jITx5HGh2uM5vAeknvCaeN6ZPOc2i8AS/view?usp=sharing)
-- #### **Module 04** - Bring a Prediction Service to Life with a User Interface.
+- ## **Module 04** - Serverless User Interfaces for Machine Learning Systems.
+    - Full lecture: [Video](https://youtu.be/GgwIspMUovM) | [Slides](https://drive.google.com/file/d/10JzJCDwi6IPnJNZ0iApzbwACkAn3C9Y9/view?usp=sharing)
+
+    - [Lab](https://youtu.be/sMhCXwm_Wmw) | [Slides](https://drive.google.com/file/d/1bASaZN68__Ut0RnSuTvhF8LKn240UPtE/view?usp=sharing)
+
 - #### **Module 05** - Automated Testing and Versioning of features and models.
 - #### **Module 06** - Real-time serverless machine learning systems. Project presentation.
 
